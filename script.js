@@ -65,13 +65,13 @@ function Play() {
         bird_dy = bird_dy + gravity;
         document.addEventListener('keydown', (e) =>{
             if(e.key == 'ArrowUp' || e.key == ' '){
-                img.src = 'images/bird-2.png';
+                img.src = 'images/birds-2.png';
                 bird_dy = -7.6;
             }
         });
         document.addEventListener('keyup', (e) => {
             if(e.key == 'ArrowUp' || e.key == ' '){
-                img.src = 'images/bird-1.png';
+                img.src = 'images/birds-1.png';
             }
         });
         if(bird_props.top <= 0 || bird_props.bottom >= background.bottom){
